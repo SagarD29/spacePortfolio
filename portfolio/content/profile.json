@@ -3,9 +3,13 @@
   "title": "Sagar Desai",
   "type": "profile",
   "date": { "start": "2025", "end": "" },
-  "summary": "Electronic Engineering graduate and ML/Data Automation-focused engineer. This profile is a placeholder and will be replaced with authoritative content.",
-  "domains": ["ml", "data-engineering", "embedded"],
-  "tags": ["profile", "about"],
+  "summary": "Data and ML-focused engineer with experience building real-time ML services, automated data pipelines, Airflow DAGs with CI, and optimising YOLO/ResNet for GPU deployment. Comfortable across Python, SQL, Linux, Docker, Git-based CI/CD, REST APIs, and AWS services, with a focus on reliable systems that reduce manual work and deliver faster insights.",
+  "domains": ["ml", "computer-vision", "data-engineering", "devops", "cloud", "embedded", "research", "frontend"],
+  "tags": ["data-engineering", "ml-automation", "mlops", "etl", "airflow", "cv", "automation"],
   "importance": "featured",
-  "links": {}
+  "links": {
+    "github": "https://github.com/SagarD29",
+    "linkedin": "https://www.linkedin.com/in/sagar-desai-a68737223/",
+    "portfolio": "https://sagar.id/"
+  }
 }

@@ -18,6 +18,12 @@ export const DOMAIN_VOCAB = [
   "events",
 ] as const;
 
+const DomainSchema = z
+  .string()
+  .refine((d) => (DOMAIN_VOCAB as readonly string[]).includes(d), {
+    message: `Domain must be one of: ${DOMAIN_VOCAB.join(", ")}`,
+  });
+
 export const ImportanceEnum = z.enum(["featured", "standard", "mini"]);
 
 export const DateRangeSchema = z.object({
@@ -31,13 +37,12 @@ export const ContentItemSchema = z.object({
   type: z.string().min(1),
   date: DateRangeSchema,
   summary: z.string().min(1),
-  domains: z.array(z.enum(DOMAIN_VOCAB)).default([]),
+  domains: z.array(DomainSchema).default([]),
   tags: z.array(z.string()).default([]),
   importance: ImportanceEnum,
-  links: z.record(z.string()).default({}),
+  links: z.record(z.string(), z.string()).default({}),
 });
 
-export type ContentItem = z.infer<typeof ContentItemSchema>;
 
-// Collections can be arrays of ContentItem
+export type ContentItem = z.infer<typeof ContentItemSchema>;
 export const ContentCollectionSchema = z.array(ContentItemSchema);

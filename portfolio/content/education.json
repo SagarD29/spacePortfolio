@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "edu__university-of-surrey-beng-electronic-engineering__2021-09",
+    "title": "University of Surrey — BEng Electronic Engineering (Placement Year)",
+    "type": "edu",
+    "date": { "start": "2021-09", "end": "2025-07" },
+    "summary": "BEng (Hons) Electronic Engineering (Upper Second-Class Honours / 2:1). Modules included Machine Learning, Data Science, Computer Vision & Pattern Recognition, Robotics, Embedded Systems, Power Electronics, Nanoscience & Nanoparticles, Semiconductors & Optoelectronics. Societies included SamSoc, Volleyball, SVGS, ISA, DesiSoc.",
+    "domains": ["embedded", "ml", "computer-vision", "research"],
+    "tags": ["beng", "electronics", "robotics", "cv", "ml", "power-electronics", "nanoscience"],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "edu__university-of-surrey-foundation-year__2020-09",
+    "title": "University of Surrey — Electrical & Electronics Engineering Foundation Year",
+    "type": "edu",
+    "date": { "start": "2020-09", "end": "2021-06" },
+    "summary": "Electrical and Electronics Engineering Foundation Year (Grade: First). Societies included SamSoc, Volleyball, SVGS, ISA, DesiSoc.",
+    "domains": ["embedded"],
+    "tags": ["foundation-year", "engineering"],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "edu__ernest-bevin-academy-a-levels__2018-09",
+    "title": "Ernest Bevin Academy — A-Levels",
+    "type": "edu",
+    "date": { "start": "2018-09", "end": "2020-06" },
+    "summary": "A-Levels: Maths (B), Physics (C), Computer Science (C). Activities: Cricket.",
+    "domains": ["events"],
+    "tags": ["a-levels", "maths", "physics", "computer-science"],
+    "importance": "mini",
+    "links": {}
+  },
+  {
+    "id": "edu__ernest-bevin-academy-gcse__2013-09",
+    "title": "Ernest Bevin Academy — GCSEs",
+    "type": "edu",
+    "date": { "start": "2013-09", "end": "2018-06" },
+    "summary": "GCSEs: Maths (7), English Language (4), English Literature (5), Combined Science (6,5), Geography (4), Business Studies (D). Activities: Cricket, CCF, Football.",
+    "domains": ["events"],
+    "tags": ["gcse", "ccf", "sports"],
+    "importance": "mini",
+    "links": {}
+  }
+]

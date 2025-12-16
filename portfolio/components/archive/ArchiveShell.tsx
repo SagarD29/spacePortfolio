@@ -10,7 +10,18 @@ export default function ArchiveShell({
   searchParams?: Record<string, string | string[] | undefined>;
 }) {
   const data = loadAllContent();
-  const allItems = Object.values(data).flat();
+  const allItems = [
+  data.profile,
+  ...data.projects,
+  ...data.experience,
+  ...data.education,
+  ...data.skills,
+  ...data.certifications,
+  ...data.plans,
+  ...data.activities,
+  ...data.volunteering,
+];
+
 
   const q: ArchiveQuery = {
     q: typeof searchParams?.q === "string" ? searchParams?.q : undefined,

@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "volunteer__royal-marines-cadets-scc__2016-09",
+    "title": "Royal Marines Cadets SCC — Cadet",
+    "type": "volunteer",
+    "date": { "start": "2016-09", "end": "2019-06" },
+    "summary": "Cadet role developing teamwork, discipline and leadership; included participation in ceremonial/public events.",
+    "domains": ["leadership", "events"],
+    "tags": ["cadets", "discipline", "teamwork", "leadership"],
+    "importance": "standard",
+    "links": {}
+  }
+]

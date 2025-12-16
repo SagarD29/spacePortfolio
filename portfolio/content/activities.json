@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "activity__thames-moonlight-walk-parkinsons-uk__2025",
+    "title": "Thames Moonlight 10 Mile Walk — Parkinson’s UK Fundraiser",
+    "type": "activity",
+    "date": { "start": "", "end": "" },
+    "summary": "Completed the Thames Moonlight 10 Mile Walk (Ultra Challenge) raising funds for Parkinson’s UK (in memory of grandma Jyotshnabaa). Shared results including time, pace and placement, and a donation link.",
+    "domains": ["events"],
+    "tags": ["charity", "fundraising", "endurance"],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "activity__brainstation-agentic-ai-product-evenings__2025",
+    "title": "Attended: Product Evenings LDN — Agentic AI",
+    "type": "activity",
+    "date": { "start": "", "end": "" },
+    "summary": "Attended BrainStation’s Product Evenings LDN on Agentic AI and product strategy; shared notes on agent cycles, goal orientation, data quality, and RAG.",
+    "domains": ["events", "ml"],
+    "tags": ["agentic-ai", "rag", "product"],
+    "importance": "mini",
+    "links": {}
+  },
+  {
+    "id": "activity__beng-awarded-university-of-surrey__2025-06",
+    "title": "Degree Awarded: BEng (Hons) Electronic Engineering (University of Surrey)",
+    "type": "activity",
+    "date": { "start": "2025-06-25", "end": "2025-06-25" },
+    "summary": "Shared milestone of being formally awarded BEng (Hons) Electronic Engineering with Upper Second-Class Honours; reflected on modules and dissertation work on transparent perovskite solar cells.",
+    "domains": ["events", "research"],
+    "tags": ["graduation", "surrey", "perovskite"],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "activity__vision4ce-year-reflection__2024",
+    "title": "Reflection: Year of Growth and Impact at Vision4ce",
+    "type": "activity",
+    "date": { "start": "", "end": "" },
+    "summary": "Reflection post summarising optimisation, automation pipeline development, reliability/error handling, algorithm implementation and MLOps workflow tools; acknowledged team collaboration and mentorship.",
+    "domains": ["ml", "data-engineering", "devops"],
+    "tags": ["mlops", "automation", "reliability", "teamwork"],
+    "importance": "standard",
+    "links": {}
+  }
+]

@@ -1,12 +1,89 @@
 [
   {
-    "id": "plan__placeholder-plan__2025",
-    "title": "Placeholder Future Plan",
+    "id": "plan__advanced-statistics-for-data-science-jhu__2025-07",
+    "title": "Advanced Statistics for Data Science Specialization (Johns Hopkins University)",
     "type": "plan",
-    "date": { "start": "2025", "end": "" },
-    "summary": "Temporary placeholder plan. Represents future roadmap items.",
-    "domains": ["ml"],
-    "tags": ["roadmap", "placeholder"],
+    "date": { "start": "2025-07", "end": "" },
+    "summary": "Advanced Statistics for Data Science (Coursera): statistical inference, hypothesis testing, and experimental design for data science (ongoing).",
+    "domains": ["ml", "data-engineering"],
+    "tags": ["statistics", "inference", "experimentation"],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "plan__finance-quant-modeling-wharton__2025-07",
+    "title": "Finance & Quantitative Modeling for Analysts Specialization (Coursera / Wharton)",
+    "type": "plan",
+    "date": { "start": "2025-07", "end": "" },
+    "summary": "Planned for Q3 2025: time-value of money, portfolio theory, and financial modelling.",
+    "domains": ["trading"],
+    "tags": ["finance", "quant", "portfolio-theory"],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "plan__google-cloud-data-engineer-prep__2025-10",
+    "title": "Preparing for Google Cloud Cert: Cloud Data Engineer (PC)",
+    "type": "plan",
+    "date": { "start": "2025-10", "end": "" },
+    "summary": "Planned for Q4 2025: hands-on preparation for the Professional Cloud Data Engineer certification.",
+    "domains": ["cloud", "data-engineering"],
+    "tags": ["gcp", "cert-prep"],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "plan__ibm-ds-fundamentals-python-sql__2025-10",
+    "title": "Data Science Fundamentals with Python & SQL Specialization (IBM)",
+    "type": "plan",
+    "date": { "start": "2025-10", "end": "" },
+    "summary": "Planned for Q4 2025: core data science workflows using Python, SQL and notebooks.",
+    "domains": ["ml", "data-engineering"],
+    "tags": ["python", "sql", "data-science"],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "plan__azure-dp100-exam-prep__2026-01",
+    "title": "Microsoft Azure Data Scientist Associate (DP-100) — Exam Prep",
+    "type": "plan",
+    "date": { "start": "2026-01", "end": "" },
+    "summary": "Planned for Q1 2026: design and run Azure ML workloads; DP-100 readiness.",
+    "domains": ["cloud", "ml"],
+    "tags": ["azure", "mlops"],
+    "importance": "mini",
+    "links": {}
+  },
+  {
+    "id": "plan__aws-cloud-practitioner__2026-01",
+    "title": "AWS Cloud Practitioner Foundation (AWS)",
+    "type": "plan",
+    "date": { "start": "2026-01", "end": "" },
+    "summary": "Planned for Q1 2026: fundamental AWS cloud concepts, security, billing, and pricing models.",
+    "domains": ["cloud"],
+    "tags": ["aws", "fundamentals"],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "plan__aws-ai-practitioner__2026-01",
+    "title": "AWS AI Practitioner Foundation (AWS)",
+    "type": "plan",
+    "date": { "start": "2026-01", "end": "" },
+    "summary": "Planned for Q1 2026: introduction to AI and ML services on AWS.",
+    "domains": ["cloud", "ml"],
+    "tags": ["aws", "ai"],
+    "importance": "mini",
+    "links": {}
+  },
+  {
+    "id": "plan__itil-4-foundation__2026-04",
+    "title": "ITIL 4 Foundation (Axelos)",
+    "type": "plan",
+    "date": { "start": "2026-04", "end": "" },
+    "summary": "Planned for Q2 2026: IT service-management and ITIL best practices.",
+    "domains": ["support", "devops"],
+    "tags": ["itil", "service-management"],
     "importance": "mini",
     "links": {}
   }
