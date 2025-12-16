@@ -2,9 +2,10 @@
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-const TYPES = ["project", "exp", "edu", "skill", "cert", "plan", "activity", "volunteer"] as const;
+const TYPES = ["", "project", "exp", "edu", "skill", "cert", "plan", "activity", "volunteer"] as const;
 
 const DOMAINS = [
+  "",
   "ml",
   "computer-vision",
   "data-engineering",
@@ -22,7 +23,7 @@ const DOMAINS = [
   "events",
 ] as const;
 
-const IMPORTANCE = ["featured", "standard", "mini"] as const;
+const IMPORTANCE = ["", "featured", "standard", "mini"] as const;
 
 function setParam(params: URLSearchParams, key: string, value?: string) {
   if (!value) params.delete(key);
@@ -55,68 +56,84 @@ export default function Filters() {
   }
 
   return (
-    <div className="flex flex-col gap-3">
-      <div className="flex flex-col md:flex-row gap-3">
-        <input
-          value={currentQ}
-          onChange={(e) => apply({ q: e.target.value })}
-          placeholder="Search title / summary / tags…"
-          className="w-full md:flex-1 border rounded-xl px-3 py-2 text-sm"
-          aria-label="Search archive"
-        />
+    <div className="rounded-2xl border bg-white p-3 md:p-4">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-3 items-stretch">
+        {/* Search */}
+        <div className="md:col-span-6">
+          <label className="block text-xs opacity-60 mb-1">Search</label>
+          <input
+            value={currentQ}
+            onChange={(e) => apply({ q: e.target.value })}
+            placeholder="Search title, summary, tags…"
+            className="w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-black/10"
+            aria-label="Search archive"
+          />
+        </div>
 
-        <select
-          value={currentType}
-          onChange={(e) => apply({ type: e.target.value })}
-          className="border rounded-xl px-3 py-2 text-sm"
-          aria-label="Filter by type"
-        >
-          <option value="">All types</option>
-          {TYPES.map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
-          ))}
-        </select>
+        {/* Type */}
+        <div className="md:col-span-2">
+          <label className="block text-xs opacity-60 mb-1">Type</label>
+          <select
+            value={currentType}
+            onChange={(e) => apply({ type: e.target.value })}
+            className="w-full rounded-xl border px-3 py-2 text-sm bg-white outline-none focus:ring-2 focus:ring-black/10"
+            aria-label="Filter by type"
+          >
+            {TYPES.map((t) => (
+              <option key={t || "all"} value={t}>
+                {t ? t : "All"}
+              </option>
+            ))}
+          </select>
+        </div>
 
-        <select
-          value={currentDomain}
-          onChange={(e) => apply({ domain: e.target.value })}
-          className="border rounded-xl px-3 py-2 text-sm"
-          aria-label="Filter by domain"
-        >
-          <option value="">All domains</option>
-          {DOMAINS.map((d) => (
-            <option key={d} value={d}>
-              {d}
-            </option>
-          ))}
-        </select>
+        {/* Domain */}
+        <div className="md:col-span-3">
+          <label className="block text-xs opacity-60 mb-1">Domain</label>
+          <select
+            value={currentDomain}
+            onChange={(e) => apply({ domain: e.target.value })}
+            className="w-full rounded-xl border px-3 py-2 text-sm bg-white outline-none focus:ring-2 focus:ring-black/10"
+            aria-label="Filter by domain"
+          >
+            {DOMAINS.map((d) => (
+              <option key={d || "all"} value={d}>
+                {d ? d : "All"}
+              </option>
+            ))}
+          </select>
+        </div>
 
-        <select
-          value={currentImportance}
-          onChange={(e) => apply({ importance: e.target.value })}
-          className="border rounded-xl px-3 py-2 text-sm"
-          aria-label="Filter by importance"
-        >
-          <option value="">All importance</option>
-          {IMPORTANCE.map((x) => (
-            <option key={x} value={x}>
-              {x}
-            </option>
-          ))}
-        </select>
+        {/* Importance + Clear */}
+        <div className="md:col-span-1 flex md:flex-col gap-3">
+          <div className="flex-1">
+            <label className="block text-xs opacity-60 mb-1">Rank</label>
+            <select
+              value={currentImportance}
+              onChange={(e) => apply({ importance: e.target.value })}
+              className="w-full rounded-xl border px-3 py-2 text-sm bg-white outline-none focus:ring-2 focus:ring-black/10"
+              aria-label="Filter by importance"
+            >
+              {IMPORTANCE.map((x) => (
+                <option key={x || "all"} value={x}>
+                  {x ? x : "All"}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        <button
-          onClick={clearAll}
-          className="border rounded-xl px-3 py-2 text-sm hover:bg-black/5"
-        >
-          Clear
-        </button>
+          <button
+            onClick={clearAll}
+            className="rounded-xl border px-3 py-2 text-sm hover:bg-black/5 transition"
+          >
+            Clear
+          </button>
+        </div>
       </div>
 
-      <p className="text-xs opacity-60">
-        Tip: Journey “portals” will link here using query filters (e.g. <span className="font-mono">/archive?domain=ml</span>).
+      <p className="mt-3 text-xs opacity-60">
+        Journey “portals” will link here using query filters only (e.g.{" "}
+        <span className="font-mono">/archive?domain=data-engineering</span>).
       </p>
     </div>
   );
