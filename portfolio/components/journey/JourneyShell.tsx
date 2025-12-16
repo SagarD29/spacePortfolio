@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { loadAllContent } from "@/lib/content/load";
 import type { ContentItem } from "@/lib/content/schema";
 import Chapter from "./Chapter";
@@ -78,7 +79,10 @@ export default function JourneyShell() {
         ),
       portals: [
         { label: "All data engineering", href: "/archive?domain=data-engineering" },
-        { label: "All automation projects", href: "/archive?type=project&domain=data-engineering" },
+        {
+          label: "All automation projects",
+          href: "/archive?type=project&domain=data-engineering",
+        },
       ],
       sceneLabel: "pipelines / orchestration",
     },
@@ -105,7 +109,8 @@ export default function JourneyShell() {
       key: "mlops",
       title: "MLOps & Observability",
       subtitle: "If you can’t measure it, you can’t trust it.",
-      pick: (items) => topN(items.filter((x) => isFeatured(x) && x.domains.includes("devops")), 6),
+      pick: (items) =>
+        topN(items.filter((x) => isFeatured(x) && x.domains.includes("devops")), 6),
       portals: [
         { label: "All DevOps", href: "/archive?domain=devops" },
         { label: "All monitoring work", href: "/archive?q=grafana" },
@@ -116,7 +121,8 @@ export default function JourneyShell() {
       key: "embedded",
       title: "Embedded & Hardware",
       subtitle: "Hands-on engineering: circuits, sensors, systems.",
-      pick: (items) => topN(items.filter((x) => isFeatured(x) && x.domains.includes("embedded")), 6),
+      pick: (items) =>
+        topN(items.filter((x) => isFeatured(x) && x.domains.includes("embedded")), 6),
       portals: [
         { label: "All embedded", href: "/archive?domain=embedded" },
         { label: "All IoT", href: "/archive?domain=iot" },
@@ -127,7 +133,8 @@ export default function JourneyShell() {
       key: "research",
       title: "Research",
       subtitle: "Transparent perovskite solar cells and scalable PV thinking.",
-      pick: (items) => topN(items.filter((x) => isFeatured(x) && x.domains.includes("research")), 6),
+      pick: (items) =>
+        topN(items.filter((x) => isFeatured(x) && x.domains.includes("research")), 6),
       portals: [
         { label: "All research", href: "/archive?domain=research" },
         { label: "All projects", href: "/archive?type=project" },
@@ -151,8 +158,8 @@ export default function JourneyShell() {
       subtitle: "Let’s talk — roles, projects, or collaboration.",
       pick: () => [],
       portals: [
-        { label: "LinkedIn", href: data.profile.links?.linkedin || "/archive?type=profile" },
-        { label: "GitHub", href: data.profile.links?.github || "/archive?type=profile" },
+        { label: "LinkedIn", href: data.profile.links?.linkedin || "/archive" },
+        { label: "GitHub", href: data.profile.links?.github || "/archive" },
         { label: "Portfolio", href: data.profile.links?.portfolio || "/" },
       ],
       sceneLabel: "contact",
@@ -160,50 +167,68 @@ export default function JourneyShell() {
   ];
 
   return (
-    <main className="bg-white text-black">
-      <div className="sticky top-0 z-30 border-b bg-white/85 backdrop-blur">
+    <main className="relative min-h-dvh overflow-x-hidden bg-[#07070c] text-white">
+      {/* Space background */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05050a] via-[#080815] to-[#07070c]" />
+        <div
+          className="absolute inset-0 opacity-[0.35]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 12% 18%, rgba(99,102,241,.35), transparent 55%)," +
+              "radial-gradient(circle at 78% 22%, rgba(34,211,238,.22), transparent 60%)," +
+              "radial-gradient(circle at 40% 85%, rgba(168,85,247,.16), transparent 55%)",
+          }}
+        />
+      </div>
+
+      {/* Sticky nav */}
+      <div className="sticky top-0 z-30 border-b border-white/10 bg-black/20 backdrop-blur-xl">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <a href="/" className="text-sm underline opacity-70 hover:opacity-100">
+            <Link
+              href="/"
+              className="text-sm text-white/75 hover:text-white transition underline"
+            >
               Home
-            </a>
-            <span className="text-xs opacity-40">/</span>
-            <span className="text-sm font-semibold">Journey</span>
+            </Link>
+            <span className="text-xs text-white/35">/</span>
+            <span className="text-sm font-semibold text-white">Journey</span>
           </div>
 
-          <a
+          <Link
             href="/archive"
-            className="rounded-xl border px-3 py-2 text-sm hover:bg-black/5 transition"
+            className="rounded-2xl border border-white/15 bg-white/5 px-3 py-2 text-sm text-white/90 hover:bg-white/10 hover:border-white/25 transition"
           >
             Open Archive →
-          </a>
+          </Link>
         </div>
       </div>
 
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-4 pt-14 pb-10">
         <ScrollReveal>
-          <p className="text-xs uppercase tracking-wider opacity-60">The Journey</p>
-          <h1 className="mt-2 text-3xl md:text-5xl font-semibold tracking-tight">
+          <p className="text-xs uppercase tracking-wider text-white/55">The Journey</p>
+          <h1 className="mt-2 text-3xl md:text-6xl font-semibold tracking-tight text-white">
             Building systems that scale — in code, data, and hardware.
           </h1>
-          <p className="mt-4 text-base md:text-lg opacity-75 max-w-3xl leading-relaxed">
+          <p className="mt-4 text-base md:text-lg text-white/70 max-w-3xl leading-relaxed">
             Curated scrollytelling: featured work only. The Archive remains the complete inventory.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
+            <Link
               href="/archive?importance=featured"
-              className="rounded-xl border px-4 py-2 text-sm hover:bg-black/5 transition"
+              className="rounded-2xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:border-white/25 transition"
             >
               View featured in Archive
-            </a>
-            <a
+            </Link>
+            <Link
               href="/archive"
-              className="rounded-xl border px-4 py-2 text-sm hover:bg-black/5 transition"
+              className="rounded-2xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:border-white/25 transition"
             >
               View everything
-            </a>
+            </Link>
           </div>
         </ScrollReveal>
       </section>
@@ -229,12 +254,12 @@ export default function JourneyShell() {
         ))}
       </div>
 
-      <footer className="border-t">
-        <div className="mx-auto max-w-6xl px-4 py-8 text-xs opacity-60 flex flex-wrap items-center justify-between gap-3">
+      <footer className="border-t border-white/10">
+        <div className="mx-auto max-w-6xl px-4 py-8 text-xs text-white/55 flex flex-wrap items-center justify-between gap-3">
           <span>Journey shows featured items only. Archive is authoritative.</span>
-          <a className="underline hover:opacity-100" href="/archive">
+          <Link href="/archive" className="underline hover:text-white transition">
             Go to Archive →
-          </a>
+          </Link>
         </div>
       </footer>
     </main>
