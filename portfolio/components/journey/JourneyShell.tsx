@@ -4,7 +4,6 @@ import type { ContentItem } from "@/lib/content/schema";
 import Chapter from "./Chapter";
 import PortalLink from "./PortalLink";
 import ScrollReveal from "./ScrollReveal";
-import SceneHook from "./SceneHook";
 
 type JourneyChapter = {
   key:
@@ -73,7 +72,8 @@ export default function JourneyShell() {
           items.filter(
             (x) =>
               isFeatured(x) &&
-              (x.domains.includes("data-engineering") || x.domains.includes("devops"))
+              (x.domains.includes("data-engineering") ||
+                x.domains.includes("devops"))
           ),
           6
         ),
@@ -95,7 +95,8 @@ export default function JourneyShell() {
           items.filter(
             (x) =>
               isFeatured(x) &&
-              (x.domains.includes("ml") || x.domains.includes("computer-vision"))
+              (x.domains.includes("ml") ||
+                x.domains.includes("computer-vision"))
           ),
           6
         ),
@@ -110,7 +111,12 @@ export default function JourneyShell() {
       title: "MLOps & Observability",
       subtitle: "If you can’t measure it, you can’t trust it.",
       pick: (items) =>
-        topN(items.filter((x) => isFeatured(x) && x.domains.includes("devops")), 6),
+        topN(
+          items.filter(
+            (x) => isFeatured(x) && x.domains.includes("devops")
+          ),
+          6
+        ),
       portals: [
         { label: "All DevOps", href: "/archive?domain=devops" },
         { label: "All monitoring work", href: "/archive?q=grafana" },
@@ -122,7 +128,12 @@ export default function JourneyShell() {
       title: "Embedded & Hardware",
       subtitle: "Hands-on engineering: circuits, sensors, systems.",
       pick: (items) =>
-        topN(items.filter((x) => isFeatured(x) && x.domains.includes("embedded")), 6),
+        topN(
+          items.filter(
+            (x) => isFeatured(x) && x.domains.includes("embedded")
+          ),
+          6
+        ),
       portals: [
         { label: "All embedded", href: "/archive?domain=embedded" },
         { label: "All IoT", href: "/archive?domain=iot" },
@@ -134,7 +145,12 @@ export default function JourneyShell() {
       title: "Research",
       subtitle: "Transparent perovskite solar cells and scalable PV thinking.",
       pick: (items) =>
-        topN(items.filter((x) => isFeatured(x) && x.domains.includes("research")), 6),
+        topN(
+          items.filter(
+            (x) => isFeatured(x) && x.domains.includes("research")
+          ),
+          6
+        ),
       portals: [
         { label: "All research", href: "/archive?domain=research" },
         { label: "All projects", href: "/archive?type=project" },
@@ -168,18 +184,9 @@ export default function JourneyShell() {
 
   return (
     <main className="relative min-h-dvh overflow-x-hidden bg-[#07070c] text-white">
-      {/* Space background */}
+      {/* Background gradient */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-[#05050a] via-[#080815] to-[#07070c]" />
-        <div
-          className="absolute inset-0 opacity-[0.35]"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 12% 18%, rgba(99,102,241,.35), transparent 55%)," +
-              "radial-gradient(circle at 78% 22%, rgba(34,211,238,.22), transparent 60%)," +
-              "radial-gradient(circle at 40% 85%, rgba(168,85,247,.16), transparent 55%)",
-          }}
-        />
       </div>
 
       {/* Sticky nav */}
@@ -208,12 +215,15 @@ export default function JourneyShell() {
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-4 pt-14 pb-10">
         <ScrollReveal>
-          <p className="text-xs uppercase tracking-wider text-white/55">The Journey</p>
+          <p className="text-xs uppercase tracking-wider text-white/55">
+            The Journey
+          </p>
           <h1 className="mt-2 text-3xl md:text-6xl font-semibold tracking-tight text-white">
             Building systems that scale — in code, data, and hardware.
           </h1>
           <p className="mt-4 text-base md:text-lg text-white/70 max-w-3xl leading-relaxed">
-            Curated scrollytelling: featured work only. The Archive remains the complete inventory.
+            Curated scrollytelling: featured work only. The Archive remains the
+            complete inventory.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -234,7 +244,7 @@ export default function JourneyShell() {
       </section>
 
       {/* Chapters */}
-      <div className="mx-auto max-w-6xl px-4 pb-16 space-y-10">
+      <div className="mx-auto max-w-6xl px-4 pb-20 space-y-14">
         {chapters.map((ch) => (
           <Chapter
             key={ch.key}
@@ -242,7 +252,7 @@ export default function JourneyShell() {
             title={ch.title}
             subtitle={ch.subtitle}
             items={ch.pick(featured)}
-            scene={<SceneHook label={ch.sceneLabel} />}
+            sceneLabel={ch.sceneLabel}
             footer={
               <div className="flex flex-wrap gap-2">
                 {ch.portals.map((p) => (
@@ -254,6 +264,7 @@ export default function JourneyShell() {
         ))}
       </div>
 
+      {/* Footer */}
       <footer className="border-t border-white/10">
         <div className="mx-auto max-w-6xl px-4 py-8 text-xs text-white/55 flex flex-wrap items-center justify-between gap-3">
           <span>Journey shows featured items only. Archive is authoritative.</span>
