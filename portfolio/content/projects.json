@@ -1,0 +1,13 @@
+[
+  {
+    "id": "project__placeholder__2025-12",
+    "title": "Placeholder Project",
+    "type": "project",
+    "date": { "start": "2025-12", "end": "" },
+    "summary": "Temporary placeholder item to validate schema. Will be replaced with authoritative content from source docs.",
+    "domains": ["data-engineering"],
+    "tags": ["placeholder"],
+    "importance": "mini",
+    "links": {}
+  }
+]
