@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "content:validate": "ts-node --transpile-only scripts/validate-content.ts"
+    "lint": "next lint",
+    "content:validate": "tsx scripts/validate-content.ts"
   },
   "dependencies": {
     "next": "16.0.10",
@@ -24,6 +24,7 @@
     "eslint-config-next": "16.0.10",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

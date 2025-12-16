@@ -1,0 +1,13 @@
+[
+  {
+    "id": "plan__placeholder-plan__2025",
+    "title": "Placeholder Future Plan",
+    "type": "plan",
+    "date": { "start": "2025", "end": "" },
+    "summary": "Temporary placeholder plan. Represents future roadmap items.",
+    "domains": ["ml"],
+    "tags": ["roadmap", "placeholder"],
+    "importance": "mini",
+    "links": {}
+  }
+]

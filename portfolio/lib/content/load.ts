@@ -6,8 +6,27 @@ const CONTENT_DIR = path.join(process.cwd(), "content");
 
 function readJson<T>(fileName: string): T {
   const fullPath = path.join(CONTENT_DIR, fileName);
-  const raw = fs.readFileSync(fullPath, "utf8");
-  return JSON.parse(raw) as T;
+
+  let raw = "";
+  try {
+    raw = fs.readFileSync(fullPath, "utf8");
+  } catch (e) {
+    throw new Error(`Failed to read content file: ${fileName}\nPath: ${fullPath}\n${String(e)}`);
+  }
+
+  // Catch empty/whitespace-only files early
+  if (!raw.trim()) {
+    throw new Error(`Content file is empty: ${fileName}\nPath: ${fullPath}`);
+  }
+
+  try {
+    return JSON.parse(raw) as T;
+  } catch (e) {
+    throw new Error(
+      `Invalid JSON in: ${fileName}\nPath: ${fullPath}\nError: ${String(e)}\n` +
+      `Tip: ensure it starts with '[' and ends with ']' for collections.`
+    );
+  }
 }
 
 export function loadCollection(fileName: string): ContentItem[] {
@@ -16,8 +35,6 @@ export function loadCollection(fileName: string): ContentItem[] {
 }
 
 export function loadAllContent() {
-  // Only collections that follow ContentItem schema live here.
-  // profile/links can be separate schemas later; for now keep them simple.
   const projects = loadCollection("projects.json");
   const experience = loadCollection("experience.json");
   const education = loadCollection("education.json");

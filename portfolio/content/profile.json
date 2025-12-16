@@ -1,0 +1,11 @@
+{
+  "id": "profile__sagar-desai__2025",
+  "title": "Sagar Desai",
+  "type": "profile",
+  "date": { "start": "2025", "end": "" },
+  "summary": "Electronic Engineering graduate and ML/Data Automation-focused engineer. This profile is a placeholder and will be replaced with authoritative content.",
+  "domains": ["ml", "data-engineering", "embedded"],
+  "tags": ["profile", "about"],
+  "importance": "featured",
+  "links": {}
+}

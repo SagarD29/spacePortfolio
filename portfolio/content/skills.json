@@ -1,0 +1,13 @@
+[
+  {
+    "id": "skill__placeholder-skill__2025",
+    "title": "Placeholder Skill",
+    "type": "skill",
+    "date": { "start": "2025", "end": "" },
+    "summary": "Temporary placeholder skill entry.",
+    "domains": ["data-engineering"],
+    "tags": ["placeholder"],
+    "importance": "mini",
+    "links": {}
+  }
+]
