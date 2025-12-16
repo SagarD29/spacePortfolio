@@ -1,5 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root { color-scheme: light; }
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  color-scheme: light;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.12);
+}
