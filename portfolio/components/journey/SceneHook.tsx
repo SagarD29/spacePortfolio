@@ -10,9 +10,7 @@ const SceneCanvas = dynamic(() => import("./three/SceneCanvas"), {
       <h3 className="mt-2 text-lg md:text-xl font-semibold tracking-tight text-white">
         Loading scene…
       </h3>
-      <p className="mt-2 text-sm text-white/70">
-        Initialising WebGL (Three.js).
-      </p>
+      <p className="mt-2 text-sm text-white/70">Initialising WebGL (Three.js).</p>
     </div>
   ),
 });
