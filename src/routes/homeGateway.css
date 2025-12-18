@@ -1,0 +1,54 @@
+.gateway {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.panel {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 450ms ease, filter 450ms ease;
+}
+
+.panel:hover {
+  transform: scale(1.01);
+  filter: brightness(1.08);
+}
+
+.panelInner {
+  max-width: 520px;
+  padding: 40px;
+}
+
+.panel h1 {
+  font-size: 48px;
+  margin: 0 0 12px;
+}
+
+.panel p {
+  font-size: 16px;
+  opacity: 0.85;
+  margin: 0 0 24px;
+}
+
+.cta {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.left {
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.12), rgba(0,0,0,0)),
+    linear-gradient(135deg, rgba(10,18,40,1), rgba(0,0,0,1));
+}
+
+.right {
+  background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.10), rgba(0,0,0,0)),
+    linear-gradient(225deg, rgba(40,10,30,1), rgba(0,0,0,1));
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "id": "certification__databricks-fundamentals-accreditation__2025-05",
+    "title": "Databricks Fundamentals Accreditation",
+    "type": "certification",
+    "date": {
+      "start": "2025-05",
+      "end": ""
+    },
+    "summary": "Databricks\nIssued May 2025",
+    "domains": [
+      "ml",
+      "data-engineering",
+      "devops"
+    ],
+    "tags": [
+      "Databricks"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "certification__genai-basics-how-llms-work__2025-05",
+    "title": "GenAI Basics - How LLMs Work",
+    "type": "certification",
+    "date": {
+      "start": "2025-05",
+      "end": ""
+    },
+    "summary": "Duke University\nIssued May 2025",
+    "domains": [
+      "ml",
+      "data-engineering",
+      "devops"
+    ],
+    "tags": [
+      "Duke University"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "certification__genai-for-business-analysis-fine-tuning-llms__2025-05",
+    "title": "GenAI For Business Analysis: Fine-Tuning LLMs",
+    "type": "certification",
+    "date": {
+      "start": "2025-05",
+      "end": ""
+    },
+    "summary": "Coursera Project Network\nIssued May 2025",
+    "domains": [
+      "ml",
+      "data-engineering",
+      "devops"
+    ],
+    "tags": [
+      "Coursera Project Network"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "certification__introduction-to-crm-with-hubspot__2025-05",
+    "title": "Introduction to CRM with HubSpot",
+    "type": "certification",
+    "date": {
+      "start": "2025-05",
+      "end": ""
+    },
+    "summary": "Coursera Project Network\nIssued May 2025",
+    "domains": [
+      "ml",
+      "data-engineering",
+      "devops"
+    ],
+    "tags": [
+      "Coursera Project Network"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "certification__pytorch-essential-training-deep-learning__2025-05",
+    "title": "PyTorch Essential Training: Deep Learning",
+    "type": "certification",
+    "date": {
+      "start": "2025-05",
+      "end": ""
+    },
+    "summary": "LinkedIn\nIssued May 2025",
+    "domains": [
+      "ml",
+      "data-engineering",
+      "devops"
+    ],
+    "tags": [
+      "LinkedIn"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "raw__licenses-section__2025-12",
+    "title": "Raw Section: Licenses & Certifications",
+    "type": "raw",
+    "date": {
+      "start": "2025-12",
+      "end": ""
+    },
+    "summary": "Databricks Fundamentals Accreditation\nDatabricks\nIssued May 2025\nGenAI Basics - How LLMs Work\nDuke University\nIssued May 2025\nGenAI For Business Analysis: Fine-Tuning LLMs\nCoursera Project Network\nIssued May 2025\nIntroduction to CRM with HubSpot\nCoursera Project Network\nIssued May 2025\nPyTorch Essential Training: Deep Learning\nLinkedIn\nIssued May 2025",
+    "domains": [
+      "events"
+    ],
+    "tags": [
+      "raw"
+    ],
+    "importance": "mini",
+    "links": {}
+  }
+]

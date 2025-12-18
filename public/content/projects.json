@@ -1,0 +1,591 @@
+[
+  {
+    "id": "project__web-portfolio__2024-03",
+    "title": "Web Portfolio",
+    "type": "project",
+    "date": {
+      "start": "2024-03",
+      "end": ""
+    },
+    "summary": "Welcome to my portfolio website showcasing my skills and projects! This website serves as a testament to my proficiency in web development and design. Utilizing cutting-edge technologies such as React.js and Three.js, I've crafted an immersive experience where visitors can explore various facets of my expertise.\nThe structure of this website reflects my organized approach to development, with clear categorization of components and resources. From the captivating skybox backgrounds to the intricate island models, every detail has been meticulously crafted to engage and impress visitors.\nDelve into the \"Bubble Content\" section to discover more about my background, education, work experience, and interests. Each island represents a different aspect of my journey and skills, providing a unique and interactive way to navigate through my portfolio.\nThe seamless integration of libraries like GSAP and Jotai enhances the user experience, ensuring smooth animations and state management. Whether you're a recruiter, potential client, or fellow developer, I invite you to explore my portfolio and get to know more about my capabilities and passions.\nSkills:\nReact.js, Three.js, Web Development, Frontend Development, JavaScript, HTML5, CSS3, Responsive Design, Git, GSAP (GreenSock Animation Platform), Jotai, User Experience (UX) Design, State Management, Component-Based Architecture, Software Development, Problem Solving, Team Collaboration, Agile Methodologies, Debugging, Creative Thinking",
+    "domains": [
+      "frontend",
+      "creative"
+    ],
+    "tags": [],
+    "importance": "featured",
+    "links": {
+      "url": "https://sagar.id/"
+    }
+  },
+  {
+    "id": "project__trading-bot__2022-04",
+    "title": "Trading Bot",
+    "type": "project",
+    "date": {
+      "start": "2022-04",
+      "end": "2022-06"
+    },
+    "summary": "Trading Bot for Stocks, Crypto, CFDs\nSkills: Data Analysis and Modeling · Programming and Software Development · Algorithm Design and Development · Machine Learning",
+    "domains": [
+      "trading",
+      "ml"
+    ],
+    "tags": [],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "project__a-world-run-by-numbers__2020-05",
+    "title": "A World Run by Numbers",
+    "type": "project",
+    "date": {
+      "start": "2020-05",
+      "end": "2022-05"
+    },
+    "summary": "Novel\nSkills: Creative Writing · Audience Engagement · Adaptability · Product Management · Storytelling · Proofreading · Illustration · Branding & Identity Marketing · Creativity · Graphic Design",
+    "domains": [
+      "creative"
+    ],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__chess-game__2018-09",
+    "title": "Chess Game",
+    "type": "project",
+    "date": {
+      "start": "2018-09",
+      "end": "2020-09"
+    },
+    "summary": "This was my A-Level Project. However, it was not finished, as the AI was implanted properly\nSkills: Programming and Software Development · Machine Learning",
+    "domains": [
+      "ml",
+      "creative"
+    ],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__ai-cctv-detector__2024-10",
+    "title": "AI CCTV Detector",
+    "type": "project",
+    "date": {
+      "start": "2024-10",
+      "end": "2024-11"
+    },
+    "summary": "Created software to load live CCTV camera feeds and apply AI models for object detection, anomaly detection, and real-time analytics.",
+    "domains": [
+      "computer-vision",
+      "ml",
+      "data-engineering"
+    ],
+    "tags": [
+      "Python",
+      "AI",
+      "Computer Vision"
+    ],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "project__ai-trading-bot__2024-05",
+    "title": "AI Trading Bot",
+    "type": "project",
+    "date": {
+      "start": "2024-05",
+      "end": ""
+    },
+    "summary": "Designed an AI-driven trading bot capable of making real-time trade decisions based on market trends and predictive analytics.",
+    "domains": [
+      "trading",
+      "ml",
+      "data-engineering"
+    ],
+    "tags": [
+      "Python",
+      "AI",
+      "Machine Learning",
+      "Algorithm Development"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__process-automation__2023-03",
+    "title": "Process Automation",
+    "type": "project",
+    "date": {
+      "start": "2023-03",
+      "end": "2024-09"
+    },
+    "summary": "Developed an automated system to streamline and optimize repetitive company workflows, reducing manual effort and increasing efficiency.",
+    "domains": [
+      "ml",
+      "data-engineering"
+    ],
+    "tags": [
+      "Python",
+      "Automation",
+      "Process Optimization"
+    ],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "project__grafana-monitoring-systems__2024-06",
+    "title": "Grafana Monitoring Systems",
+    "type": "project",
+    "date": {
+      "start": "2024-06",
+      "end": "2024-09"
+    },
+    "summary": "Built multiple Grafana monitoring dashboards to track key performance metrics for company systems.",
+    "domains": [
+      "devops",
+      "data-engineering",
+      "ml"
+    ],
+    "tags": [
+      "Python",
+      "Prometheus",
+      "Grafana"
+    ],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "project__dataset-creation-cleaning-scripts__2023-09",
+    "title": "Dataset Creation & Cleaning Scripts",
+    "type": "project",
+    "date": {
+      "start": "2023-09",
+      "end": "2024-02"
+    },
+    "summary": "Developed scripts to automate dataset creation and cleaning for machine learning applications.",
+    "domains": [
+      "data-engineering",
+      "ml"
+    ],
+    "tags": [
+      "Python",
+      "JavaScript",
+      "Data Processing"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__image-clustering-sorting__2023-09",
+    "title": "Image Clustering & Sorting",
+    "type": "project",
+    "date": {
+      "start": "2023-09",
+      "end": "2023-12"
+    },
+    "summary": "Created a visualization and clustering tool to categorize and sort large image datasets based on AI-driven similarity analysis.",
+    "domains": [
+      "ml",
+      "data-engineering"
+    ],
+    "tags": [
+      "Python",
+      "AI",
+      "Data Visualization"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__algorithm-based-trading-bot__2022-04",
+    "title": "Algorithm-Based Trading Bot",
+    "type": "project",
+    "date": {
+      "start": "2022-04",
+      "end": "2022-06"
+    },
+    "summary": "Developed a trading bot for Stocks, Crypto, and CFDs using Python and PineScript. Implemented algorithmic strategies to automate trade execution and optimize profit margins.",
+    "domains": [
+      "trading",
+      "ml",
+      "data-engineering"
+    ],
+    "tags": [
+      "Python",
+      "Pinescript",
+      "Data Analysis",
+      "Machine Learning"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__discounted-gg__2022-03",
+    "title": "Discounted.gg",
+    "type": "project",
+    "date": {
+      "start": "2022-03",
+      "end": "2022-12"
+    },
+    "summary": "Co-developed a website that scrapes and aggregates discounted games from major online stores, categorizing and displaying them efficiently.",
+    "domains": [
+      "frontend",
+      "ml",
+      "data-engineering"
+    ],
+    "tags": [
+      "TypeScript",
+      "Vue.js",
+      "Web Scraping",
+      "Data Aggregation"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__chess-game-a-level-project__2018-09",
+    "title": "Chess Game (A-Level Project)",
+    "type": "project",
+    "date": {
+      "start": "2018-09",
+      "end": "2020-09"
+    },
+    "summary": "Developed a chess game with AI capabilities. The AI component was partially implemented, but the game interface and core logic were completed.",
+    "domains": [
+      "ml",
+      "data-engineering"
+    ],
+    "tags": [
+      "Python",
+      "Game Development",
+      "AI"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__transparent-solar-cells-ongoing__2025",
+    "title": "Transparent Solar Cells (Ongoing)",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Researching and developing transparent perovskite solar cells with a focus on energy efficiency and material optimization.",
+    "domains": [
+      "research",
+      "embedded"
+    ],
+    "tags": [
+      "Nanotechnology",
+      "Renewable Energy",
+      "Semiconductor Physics"
+    ],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "project__audio-amplifier__2025",
+    "title": "Audio Amplifier",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Designed and developed an audio amplifier with volume control, LCD display for audio amplitude, and mono/stereo mode switching.",
+    "domains": [
+      "embedded",
+      "research"
+    ],
+    "tags": [
+      "Circuit Design",
+      "Signal Processing",
+      "Embedded Systems"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__fm-radio__2023-05",
+    "title": "FM Radio",
+    "type": "project",
+    "date": {
+      "start": "2023-05",
+      "end": ""
+    },
+    "summary": "Built an FM radio with additional features such as temperature and proximity sensors, LCD display, and remote control functionality.",
+    "domains": [
+      "embedded",
+      "research"
+    ],
+    "tags": [
+      "RF Design",
+      "Embedded Systems",
+      "PCB Design"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__capacitance-adapter-for-multimeter__2022-05",
+    "title": "Capacitance Adapter for Multimeter",
+    "type": "project",
+    "date": {
+      "start": "2022-05",
+      "end": ""
+    },
+    "summary": "Created an adapter to enhance multimeter capacitance measurement accuracy by converting high-frequency signals.",
+    "domains": [
+      "embedded",
+      "research"
+    ],
+    "tags": [
+      "Analog Electronics",
+      "Measurement Systems"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__portfolio-website__2025",
+    "title": "Portfolio Website",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Designed and developed this portfolio website using Next.js and TailwindCSS, ensuring responsiveness and modern UI design.",
+    "domains": [
+      "frontend"
+    ],
+    "tags": [
+      "Frontend Development",
+      "Next.js",
+      "TailwindCSS"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__home-automation-system__2025",
+    "title": "Home Automation System",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Developed an IoT-based home automation system using Raspberry Pi and ESP8266 for remote appliance control.",
+    "domains": [],
+    "tags": [
+      "IoT",
+      "Embedded Systems",
+      "Home Automation"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__coursera__2025",
+    "title": "Coursera",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Statistical inference, hypothesis testing and experimental design for DS.\nFinance & Quantitative Modeling for Analysts Specialization",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__coursera-wharton__2025",
+    "title": "Coursera (Wharton)",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Time-value of money, portfolio theory, and financial modelling.\nPreparing for Google Cloud Cert: Cloud Data Engineer (PC)",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__google-cloud__2025",
+    "title": "Google Cloud",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Hands-on prep for the Professional Cloud Data Engineer certification.\nData Science Fundamentals with Python & SQL Specialization",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__ibm__2025",
+    "title": "IBM",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Core DS workflows using Python, SQL and Jupyter notebooks.\nMicrosoft Azure Data Scientist Associate (DP-100) – Exam Prep",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__microsoft__2025",
+    "title": "Microsoft",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Design and run Azure ML workloads; DP-100 certification readiness.\nIBM Data Analytics with Excel and R Professional Certificate",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__deeplearning-ai__2025",
+    "title": "DeepLearning.AI",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Modern data-engineering patterns, pipelines and MLOps foundations.\nGoogle Advanced Data Analytics Professional Certificate",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__google__2025",
+    "title": "Google",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "End-to-end analytics, experimentation, and ML in Google Cloud.\nIBM Data Engineering Professional Certificate",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__amazon-web-services__2025",
+    "title": "Amazon Web Services",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Introduction to AI and ML services on AWS, focusing on core AI tools.\nAWS Solutions Architect Associate",
+    "domains": [
+      "frontend"
+    ],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__axelos__2025",
+    "title": "Axelos",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Introduction to IT service-management and ITIL best-practices.\nDocker Certified Associate (DCA)",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__docker__2025",
+    "title": "Docker",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Containerization fundamentals, Docker security, and orchestration.\nCertified Kubernetes Administrator (CKA)",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__cncf__2025",
+    "title": "CNCF",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Hands-on Kubernetes administration, security, and troubleshooting.\nCloudBees Jenkins Engineer",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__cloudbees__2025",
+    "title": "CloudBees",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "CI/CD pipeline automation and Jenkins optimisation techniques.\nHashiCorp Certified: Terraform Associate",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "project__hashicorp__2025",
+    "title": "HashiCorp",
+    "type": "project",
+    "date": {
+      "start": "",
+      "end": ""
+    },
+    "summary": "Infrastructure-as-Code (IaC) best-practices using Terraform.",
+    "domains": [],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "raw__projects-section__2025-12",
+    "title": "Raw Section: Projects",
+    "type": "raw",
+    "date": {
+      "start": "2025-12",
+      "end": ""
+    },
+    "summary": "Web Portfolio | Domain : https://sagar.id/ | Working Progress\nMar 2024 - Present\nWelcome to my portfolio website showcasing my skills and projects! This website serves as a testament to my proficiency in web development and design. Utilizing cutting-edge technologies such as React.js and Three.js, I've crafted an immersive experience where visitors can explore various facets of my expertise.\nThe structure of this website reflects my organized approach to development, with clear categorization of components and resources. From the captivating skybox backgrounds to the intricate island models, every detail has been meticulously crafted to engage and impress visitors.\nDelve into the \"Bubble Content\" section to discover more about my background, education, work experience, and interests. Each island represents a different aspect of my journey and skills, providing a unique and interactive way to navigate through my portfolio.\nThe seamless integration of libraries like GSAP and Jotai enhances the user experience, ensuring smooth animations and state management. Whether you're a recruiter, potential client, or fellow developer, I invite you to explore my portfolio and get to know more about my capabilities and passions.\nSkills:\nReact.js, Three.js, Web Development, Frontend Development, JavaScript, HTML5, CSS3, Responsive Design, Git, GSAP (GreenSock Animation Platform), Jotai, User Experience (UX) Design, State Management, Component-Based Architecture, Software Development, Problem Solving, Team Collaboration, Agile Methodologies, Debugging, Creative Thinking\nTrading Bot\nApr 2022 - Jun 2022\nTrading Bot for Stocks, Crypto, CFDs\nSkills: Data Analysis and Modeling · Programming and Software Development · Algorithm Design and Development · Machine Learning\nA World Run by Numbers\nMay 2020 - May 2022\nNovel\nSkills: Creative Writing · Audience Engagement · Adaptability · Product Management · Storytelling · Proofreading · Illustration · Branding & Identity Marketing · Creativity · Graphic Design\nChess Game\nSep 2018 - Sep 2020\nThis was my A-Level Project. However, it was not finished, as the AI was implanted properly\nSkills: Programming and Software Development · Machine Learning",
+    "domains": [
+      "events"
+    ],
+    "tags": [
+      "raw"
+    ],
+    "importance": "mini",
+    "links": {}
+  }
+]

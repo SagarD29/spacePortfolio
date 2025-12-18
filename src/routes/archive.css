@@ -1,0 +1,122 @@
+.archiveRoot {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.archiveShell {
+  min-height: 100vh;
+  padding: 28px;
+  background: #07070b;
+  color: #fff;
+}
+
+.archiveHeader {
+  display: flex;
+  gap: 18px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.archiveHeader h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.archiveHeader p {
+  margin: 8px 0 0;
+  opacity: 0.75;
+}
+
+.archiveSearch {
+  width: min(520px, 45vw);
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  color: white;
+  outline: none;
+}
+
+.archiveGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 1100px) {
+  .archiveGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .archiveGrid { grid-template-columns: 1fr; }
+  .archiveHeader { flex-direction: column; align-items: stretch; }
+  .archiveSearch { width: 100%; }
+}
+
+.card {
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  overflow: hidden;
+}
+
+.card.featured {
+  border-color: rgba(255,255,255,0.22);
+}
+
+.cardTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.meta {
+  opacity: 0.7;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.summary {
+  opacity: 0.85;
+  line-height: 1.45;
+  margin: 10px 0 12px;
+  font-size: 14px;
+}
+
+.pillRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.pill {
+  font-size: 12px;
+  opacity: 0.85;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.25);
+}
+
+.linksRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.linksRow a {
+  font-size: 12px;
+  opacity: 0.85;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+.linksRow a:hover {
+  opacity: 1;
+}

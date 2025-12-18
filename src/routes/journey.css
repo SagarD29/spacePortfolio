@@ -1,0 +1,70 @@
+.journeyShell {
+  min-height: 100vh;
+  background: #03030a;
+  color: #fff;
+}
+
+.journeyHero {
+  padding: 56px 28px 18px;
+}
+.journeyHero h1 {
+  margin: 0;
+  font-size: 44px;
+}
+.journeyHero p {
+  margin: 10px 0 0;
+  opacity: 0.75;
+}
+
+.chapter {
+  padding: 44px 28px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.chapterInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.chapterInner h2 {
+  font-size: 28px;
+  margin: 0 0 14px;
+}
+
+.featuredRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 900px) {
+  .featuredRow { grid-template-columns: 1fr; }
+}
+
+.spotlight {
+  border-radius: 18px;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+}
+
+.spotTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.spotSummary {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+
+.portal {
+  display: inline-block;
+  margin-top: 6px;
+  text-decoration: none;
+  opacity: 0.9;
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+.portal:hover { opacity: 1; }

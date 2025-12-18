@@ -1,0 +1,48 @@
+.journeyRoot {
+  position: relative;
+  min-height: 100vh;
+  background: #05050b;
+}
+
+.journeyCanvas {
+  position: fixed !important;
+  inset: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* HUD */
+.journeyHud {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.hudHome,
+.hudArchive {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(245, 247, 255, 0.9);
+  background: rgba(10, 12, 22, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px) saturate(1.2);
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+.hudHome:hover,
+.hudArchive:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.22);
+}

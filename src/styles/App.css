@@ -1,0 +1,29 @@
+/* src/styles/App.css */
+
+/*
+  IMPORTANT:
+  - Do NOT fix-position html/body/#root.
+  - Let @react-three/drei ScrollControls create/manage its own scroll container.
+  - Keep the document from being the scroller; route components can manage their own scrolling.
+*/
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #000;
+  overflow: hidden; /* Drei owns scrolling when ScrollControls is used */
+}
+
+/* Let R3F/Drei decide correct pointer handling.
+   If you need to enable dragging/scrolling on canvas later, set it locally per route. */
+canvas {
+  display: block;
+}
+
+/* Optional: makes text look a bit better globally */
+* {
+  box-sizing: border-box;
+}

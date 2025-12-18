@@ -1,0 +1,104 @@
+[
+  {
+    "id": "experience__freelance-web-developer__2024-03",
+    "title": "Freelance Web Developer",
+    "type": "experience",
+    "date": {
+      "start": "2024-03",
+      "end": "2025-03"
+    },
+    "summary": "Freelance\n• Developed two responsive WordPress sites with Elementor, boosting client engagement by\n30%.\n• Exposure to WooCommerce.\n• Reducing manual data entry by 25%.",
+    "domains": [
+      "frontend"
+    ],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "experience__retail-floor-customer-sales-rep__2024-09",
+    "title": "Retail Floor Customer Sales Rep",
+    "type": "experience",
+    "date": {
+      "start": "2024-09",
+      "end": "2025-02"
+    },
+    "summary": "Nisa Retail · Temporary\nOn-siteOn-site\n- Performed various store operations for closing procedures, product display management.\n- Managed store inventory by directing routine stock control procedures to maximise sales opportunities.\n- Guaranteed delivery of first-class customer service, coaching team members to produce positive outcomes.\n- Effectively assigned daily responsibilities to team members, ensuring smooth operations and optimal task completion across the store.",
+    "domains": [
+      "retail",
+      "leadership"
+    ],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "experience__software-engineer-ml-automation__2023-09",
+    "title": "Software Engineer – ML Automation",
+    "type": "experience",
+    "date": {
+      "start": "2023-09",
+      "end": "2024-09"
+    },
+    "summary": "Chess Dynamics · Full-time\nTechnical Skills:\n- Programming Languages: Python, Shell Scripting\n- Data Engineering: Data Scraping, Database Management, Data Indexing, Data Triage\n- Machine Learning: Model Implementation (ResNet50, YOLO), INT8 Calibration, Classification Systems, Cluster Analysis\n- Deep Learning: Neural Networks, Object Detection, Darknet Framework, TensorRT\n- DevOps: Apache Airflow, Continuous Integration (CI), Workflow Automation, Docker/Containers\n- Image Processing: Image Labeling, Patch Dataset Creation, Image Classification\n- Software Development: API Development, Software Testing, Version Control (Git)\n- Automation: Automated Pipelines, Data Filtering, Dataset Sorting\n- Tools and Technologies: Docker, TensorRT, Apache Airflow, Git, JSON, XML\nSkills: Adaptability · Process Automation · Data Scraping · Apache Airflow · ResNet · Attention to Detail · Python (Programming Language) · Docker · Team Collaboration · Neural Networks · Problem Solving · Automated Pipelines · Continuous Integration (CI) · YOLO · Database Management System (DBMS) · Machine Learning\nSkills: Adaptability · Process Automation · Data Scraping · Apache Airflow · ResNet · Attention to",
+    "domains": [
+      "ml",
+      "data-engineering",
+      "devops",
+      "computer-vision"
+    ],
+    "tags": [],
+    "importance": "featured",
+    "links": {}
+  },
+  {
+    "id": "experience__second-line-help-desk__2018-11",
+    "title": "Second Line Help Desk",
+    "type": "experience",
+    "date": {
+      "start": "2018-11",
+      "end": "2018-11"
+    },
+    "summary": "NHS England · Internship\nTooting, England, United Kingdom · On-site\n• Participated in fire training, CPR training, and first aid to ensure safety in the workplace.\nSkills: Customer Service · Cardiopulmonary Resuscitation (CPR) · Documentation · Troubleshooting · First Aid · Problem Solving · Client Relations",
+    "domains": [
+      "support"
+    ],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "experience__first-line-help-desk__2018-10",
+    "title": "First Line Help Desk",
+    "type": "experience",
+    "date": {
+      "start": "2018-10",
+      "end": "2018-10"
+    },
+    "summary": "Kaplan · Internship\nBromley, England, United Kingdom · On-site\n• Gained insight into IT support systems and cyber security.\n• Shadowed experts to learn different ways of solving IT-related issues\n• Managed multiple clients calls per day\nSkills: Customer Service · Troubleshooting · Problem Solving · Client Relations · Time Management\nEducation\nUniversity of Surrey\nBachelor of Engineering - BEng, Electronic Engineering with Placement Year\nSep 2021 - Jul 2025\nGrade: 2:1, Upper Second Class Honours\nActivities and societies: SamSoc, Volleyball, SVGS, ISA, DesiSoc\nSkills: Critical Thinking · Adaptability · Mathematics · Engineering Drawings · Time Management · Laboratory Skills · Documentation · Problem Solving · Circuit Design and Analysis · Communication · Attention to Detail · Project Management · Programming and Software Development · Teamwork · Research Skills\nUniversity of Surrey\nBachelor of Engineering - BE, Electrical and Electronics Engineering Foundation Year\nSep 2020 - Jun 2021\nGrade: First\nActivities and societies: SamSoc, Volleyball, SVGS, ISA, DesiSoc\nSkills: Critical Thinking · Adaptability · Mathematics · Engineering Drawings · Time Management · Laboratory Skills · Documentation · Problem Solving · Circuit Design and Analysis · Communication · Attention to Detail · Project Management · Programming and Software Development · Teamwork · Research Skills\nErnest Bevin Academy\nSep 2018 - Jun 2020Sep 2018 - Jun 2020\nGrade: Maths B, Physics C, Computer Science CGrade: Maths B, Physics C, Computer Science C\nActivities and societies: Cricket\nSkills: Adaptability · Mathematics · Programming and Software Development\nErnest Bevin Academy\nSep 2013 - Jun 2018Sep 2013 - Jun 2018\nGrade: Maths(7), Eng Lang(4), Eng Lit(5), Science(6,5), Geography(4), Bus. Studies(D)\nActivities and societies: Member of Cricket, CCF, Football\nSkills: Strategic Thinking · Resilience · Adaptability · Leadership · First Aid · Organization Skills · Time Management · Problem Solving · Navigation · Discipline · Communication · Responsibility · Teamwork",
+    "domains": [
+      "support"
+    ],
+    "tags": [],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "raw__experience-section__2025-12",
+    "title": "Raw Section: Experience",
+    "type": "raw",
+    "date": {
+      "start": "2025-12",
+      "end": ""
+    },
+    "summary": "Freelance Web Developer\nFreelance\nMar 2024 - Mar 2025 · 1 yr 1 mo\n• Developed two responsive WordPress sites with Elementor, boosting client engagement by\n30%.\n• Exposure to WooCommerce.\n• Reducing manual data entry by 25%.\nRetail Floor Customer Sales Rep\nNisa Retail · Temporary\nSep 2024 - Feb 2025 · 6 mos\nOn-siteOn-site\n- Performed various store operations for closing procedures, product display management.\n- Managed store inventory by directing routine stock control procedures to maximise sales opportunities.\n- Guaranteed delivery of first-class customer service, coaching team members to produce positive outcomes.\n- Effectively assigned daily responsibilities to team members, ensuring smooth operations and optimal task completion across the store.\nSoftware Engineer – ML Automation\nChess Dynamics · Full-time\nSep 2023 - Sep 2024 · 1 yr 1 mo\nTechnical Skills:\n- Programming Languages: Python, Shell Scripting\n- Data Engineering: Data Scraping, Database Management, Data Indexing, Data Triage\n- Machine Learning: Model Implementation (ResNet50, YOLO), INT8 Calibration, Classification Systems, Cluster Analysis\n- Deep Learning: Neural Networks, Object Detection, Darknet Framework, TensorRT\n- DevOps: Apache Airflow, Continuous Integration (CI), Workflow Automation, Docker/Containers\n- Image Processing: Image Labeling, Patch Dataset Creation, Image Classification\n- Software Development: API Development, Software Testing, Version Control (Git)\n- Automation: Automated Pipelines, Data Filtering, Dataset Sorting\n- Tools and Technologies: Docker, TensorRT, Apache Airflow, Git, JSON, XML\nSkills: Adaptability · Process Automation · Data Scraping · Apache Airflow · ResNet · Attention to Detail · Python (Programming Language) · Docker · Team Collaboration · Neural Networks · Problem Solving · Automated Pipelines · Continuous Integration (CI) · YOLO · Database Management System (DBMS) · Machine Learning\nSkills: Adaptability · Process Automation · Data Scraping · Apache Airflow · ResNet · Attention to\nSecond Line Help Desk\nNHS England · Internship\nNov 2018 - Nov 2018 · 1 mo\nTooting, England, United Kingdom · On-site\n• Participated in fire training, CPR training, and first aid to ensure safety in the workplace.\nSkills: Customer Service · Cardiopulmonary Resuscitation (CPR) · Documentation · Troubleshooting · First Aid · Problem Solving · Client Relations\nFirst Line Help Desk\nKaplan · Internship\nOct 2018 - Oct 2018 · 1 mo\nBromley, England, United Kingdom · On-site\n• Gained insight into IT support systems and cyber security.\n• Shadowed experts to learn different ways of solving IT-related issues\n• Managed multiple clients calls per day\nSkills: Customer Service · Troubleshooting · Problem Solving · Client Relations · Time Management\nEducation\nUniversity of Surrey\nBachelor of Engineering - BEng, Electronic Engineering with Placement Year\nSep 2021 - Jul 2025\nGrade: 2:1, Upper Second Class Honours\nActivities and societies: SamSoc, Volleyball, SVGS, ISA, DesiSoc\nSkills: Critical Thinking · Adaptability · Mathematics · Engineering Drawings · Time Management · Laboratory Skills · Documentation · Problem Solving · Circuit Design and Analysis · Communication · Attention to Detail · Project Management · Programming and Software Development · Teamwork · Research Skills\nUniversity of Surrey\nBachelor of Engineering - BE, Electrical and Electronics Engineering Foundation Year\nSep 2020 - Jun 2021\nGrade: First\nActivities and societies: SamSoc, Volleyball, SVGS, ISA, DesiSoc\nSkills: Critical Thinking · Adaptability · Mathematics · Engineering Drawings · Time Management · Laboratory Skills · Documentation · Problem Solving · Circuit Design and Analysis · Communication · Attention to Detail · Project Management · Programming and Software Development · Teamwork · Research Skills\nErnest Bevin Academy\nSep 2018 - Jun 2020Sep 2018 - Jun 2020\nGrade: Maths B, Physics C, Computer Science CGrade: Maths B, Physics C, Computer Science C\nActivities and societies: Cricket\nSkills: Adaptability · Mathematics · Programming and Software Development\nErnest Bevin Academy\nSep 2013 - Jun 2018Sep 2013 - Jun 2018\nGrade: Maths(7), Eng Lang(4), Eng Lit(5), Science(6,5), Geography(4), Bus. Studies(D)\nActivities and societies: Member of Cricket, CCF, Football\nSkills: Strategic Thinking · Resilience · Adaptability · Leadership · First Aid · Organization Skills · Time Management · Problem Solving · Navigation · Discipline · Communication · Responsibility · Teamwork",
+    "domains": [
+      "events"
+    ],
+    "tags": [
+      "raw"
+    ],
+    "importance": "mini",
+    "links": {}
+  }
+]

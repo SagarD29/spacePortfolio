@@ -1,0 +1,40 @@
+[
+  {
+    "id": "education__bachelor-of-engineering-beng__2021-09",
+    "title": "Bachelor of Engineering - BEng",
+    "type": "education",
+    "date": {
+      "start": "2021-09",
+      "end": "2025-07"
+    },
+    "summary": "University of Surrey\nBachelor of Engineering - BEng, Electronic Engineering with Placement Year\nSep 2021 - Jul 2025\nGrade: 2:1, Upper Second Class Honours\nActivities and societies: SamSoc, Volleyball, SVGS, ISA, DesiSoc\nSkills: Critical Thinking · Adaptability · Mathematics · Engineering Drawings · Time Management · Laboratory Skills · Documentation · Problem Solving · Circuit Design and Analysis · Communication · Attention to Detail · Project Management · Programming and Software Development · Teamwork · Research Skills",
+    "domains": [
+      "embedded",
+      "research"
+    ],
+    "tags": [
+      "University of Surrey"
+    ],
+    "importance": "standard",
+    "links": {}
+  },
+  {
+    "id": "education__bachelor-of-engineering-be__2020-09",
+    "title": "Bachelor of Engineering - BE",
+    "type": "education",
+    "date": {
+      "start": "2020-09",
+      "end": "2021-06"
+    },
+    "summary": "University of Surrey\nBachelor of Engineering - BE, Electrical and Electronics Engineering Foundation Year\nSep 2020 - Jun 2021\nGrade: First\nActivities and societies: SamSoc, Volleyball, SVGS, ISA, DesiSoc\nSkills: Critical Thinking · Adaptability · Mathematics · Engineering Drawings · Time Management · Laboratory Skills · Documentation · Problem Solving · Circuit Design and Analysis · Communication · Attention to Detail · Project Management · Programming and Software Development · Teamwork · Research Skills\nErnest Bevin Academy\nSep 2018 - Jun 2020Sep 2018 - Jun 2020\nGrade: Maths B, Physics C, Computer Science CGrade: Maths B, Physics C, Computer Science C\nActivities and societies: Cricket\nSkills: Adaptability · Mathematics · Programming and Software Development\nErnest Bevin Academy\nSep 2013 - Jun 2018Sep 2013 - Jun 2018\nGrade: Maths(7), Eng Lang(4), Eng Lit(5), Science(6,5), Geography(4), Bus. Studies(D)\nActivities and societies: Member of Cricket, CCF, Football\nSkills: Strategic Thinking · Resilience · Adaptability · Leadership · First Aid · Organization Skills · Time Management · Problem Solving · Navigation · Discipline · Communication · Responsibility · Teamwork",
+    "domains": [
+      "embedded",
+      "research"
+    ],
+    "tags": [
+      "University of Surrey"
+    ],
+    "importance": "standard",
+    "links": {}
+  }
+]

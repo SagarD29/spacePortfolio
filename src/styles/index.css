@@ -1,0 +1,36 @@
+/* src/styles/index.css */
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  /* DO NOT use display:flex globally — it can break height/scroll calculations */
+  background: #000;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure root fills viewport */
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

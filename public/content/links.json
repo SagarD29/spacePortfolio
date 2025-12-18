@@ -1,0 +1,22 @@
+{
+  "id": "links__key-links__2025-12",
+  "title": "Key Links",
+  "type": "links",
+  "date": {
+    "start": "2025-12",
+    "end": ""
+  },
+  "summary": "Primary professional links.",
+  "domains": [
+    "events"
+  ],
+  "tags": [
+    "links"
+  ],
+  "importance": "featured",
+  "links": {
+    "github": "https://github.com/SagarD29",
+    "port": "https://sagar.id/",
+    "linkedin": "https://www.linkedin.com/in/sagar-desai-a68737223/"
+  }
+}
