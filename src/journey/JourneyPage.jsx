@@ -1,42 +1,45 @@
-import { ScrollControls, Preload } from "@react-three/drei";
+// src/journey/JourneyPage.jsx
+import { ScrollControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useMemo } from "react";
-import { Link } from "react-router-dom";
+import React, { useRef } from "react";
 import JourneyScene from "./JourneyScene";
-import "./journey.css";
+import StageArrows from "./StageArrows";
+import { STAGE_COUNT } from "./stages/stages";
+import StepScrollController from "./StepScrollController";
 
 export default function JourneyPage() {
-  const pages = useMemo(() => 10, []);
+  const stepRef = useRef(null);
 
   return (
-    <main className="journeyRoot">
-      {/* HUD OUTSIDE Canvas */}
-      <div className="journeyHud">
-        <Link className="hudHome" to="/">
-          Home
-        </Link>
-        <Link className="hudArchive" to="/archive">
-          Archive
-        </Link>
-      </div>
+    <div
+      style={{
+        height: "100vh",
+        width: "100vw",
+        overflow: "hidden",
+        position: "relative",
+        background: "black",
+      }}
+    >
+      {/* Overlay arrows */}
+      <StageArrows
+        onPrev={() => stepRef.current?.prev?.()}
+        onNext={() => stepRef.current?.next?.()}
+      />
 
-      <Canvas
-        className="journeyCanvas"
-        dpr={[1, 2]}
-        gl={{ antialias: true, alpha: false, powerPreference: "high-performance" }}
-        camera={{ fov: 52, near: 0.1, far: 8000, position: [0, 1, 14] }}
-      >
-        <color attach="background" args={["#05050b"]} />
-
-        <Suspense fallback={null}>
-          {/* IMPORTANT: no <Scroll> wrapper for the 3D scene */}
-          <ScrollControls pages={pages} damping={0.12}>
-            <JourneyScene />
-          </ScrollControls>
-
-          <Preload all />
-        </Suspense>
+      <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
+        <ScrollControls pages={STAGE_COUNT} damping={0.08}>
+          <StepScrollController
+            ref={stepRef}
+            stageCount={STAGE_COUNT}
+            // tuned for “easy to scroll one stage at a time”
+            gestureWindowMs={120}
+            gestureThreshold={55}
+            maxQueuedSteps={2}
+            stepDurationMs={520}
+          />
+          <JourneyScene />
+        </ScrollControls>
       </Canvas>
-    </main>
+    </div>
   );
 }
