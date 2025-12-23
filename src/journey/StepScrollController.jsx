@@ -16,21 +16,18 @@ function easeInOutCubic(t) {
 
 /**
  * Step-based scrolling with waypoints:
- * - We *do not* rely on single wheel events (trackpads spam tiny deltas).
- * - We collect deltas over a short window ("gesture"), then commit ONE step.
- * - While animating, we can queue another step (so fast scrolls still feel responsive).
+ * - Wheel/trackpad deltas are accumulated into a short "gesture" window.
+ * - When the gesture ends, we commit exactly ONE step (stage +/- 1),
+ *   and animate scrollTop to that stage's waypoint.
+ * - If the user keeps scrolling during animation, we queue steps (optional).
  */
 const StepScrollController = forwardRef(function StepScrollController(
   {
     stageCount,
-
-    // gesture settings
-    gestureWindowMs = 120,     // how long we wait for wheel "burst" to end
-    gestureThreshold = 60,     // accumulated delta required to commit a step
-    maxQueuedSteps = 2,        // allow queuing extra steps while animating (0..N)
-
-    // animation settings
-    stepDurationMs = 520,      // waypoint animation duration
+    gestureWindowMs = 120, // how long we wait for a wheel burst to end
+    gestureThreshold = 45, // lower = easier to trigger a step
+    maxQueuedSteps = 1, // allow 0..N queued steps during animation
+    stepDurationMs = 420, // waypoint animation duration
   },
   ref
 ) {
@@ -50,8 +47,8 @@ const StepScrollController = forwardRef(function StepScrollController(
     startTime: 0,
 
     // queued intent while animating
-    queuedDir: 0,         // -1 or +1
-    queuedCount: 0,       // how many steps to execute after animation
+    queuedDir: 0, // -1 or +1
+    queuedCount: 0,
   });
 
   const getMaxScrollTop = (el) => Math.max(1, el.scrollHeight - el.clientHeight);
@@ -62,7 +59,7 @@ const StepScrollController = forwardRef(function StepScrollController(
     return t * maxScrollTop;
   };
 
-  const topToStage = (el) => {
+  const topToNearestStage = (el) => {
     const maxScrollTop = getMaxScrollTop(el);
     const t = clamp(el.scrollTop / maxScrollTop, 0, 1);
     return clamp(Math.round(t * (stageCount - 1)), 0, stageCount - 1);
@@ -91,8 +88,8 @@ const StepScrollController = forwardRef(function StepScrollController(
 
     const s = stateRef.current;
 
-    // If user resized / content changed, keep stage aligned
-    s.stage = topToStage(el);
+    // keep stage in sync in case layout changed
+    s.stage = topToNearestStage(el);
 
     const abs = Math.abs(s.accum);
     if (abs < gestureThreshold) {
@@ -103,7 +100,7 @@ const StepScrollController = forwardRef(function StepScrollController(
     const dir = s.accum > 0 ? 1 : -1;
     s.accum = 0;
 
-    // If animating, queue intent
+    // If animating, queue the step
     if (s.animating) {
       if (s.queuedCount < maxQueuedSteps) {
         s.queuedDir = dir;
@@ -115,7 +112,7 @@ const StepScrollController = forwardRef(function StepScrollController(
     startAnimToStage(s.stage + dir);
   };
 
-  // Expose next/prev for arrow buttons
+  // Expose controls for arrows + keyboard
   useImperativeHandle(ref, () => ({
     next() {
       const s = stateRef.current;
@@ -139,6 +136,14 @@ const StepScrollController = forwardRef(function StepScrollController(
       }
       startAnimToStage(s.stage - 1);
     },
+    goTo(stageIndex) {
+      const s = stateRef.current;
+      s.queuedCount = 0;
+      s.queuedDir = 0;
+      s.accum = 0;
+      if (s.animating) {s.animating = false;}
+      startAnimToStage(stageIndex);
+    },
     getStage() {
       return stateRef.current.stage;
     },
@@ -148,22 +153,21 @@ const StepScrollController = forwardRef(function StepScrollController(
     const el = scroll.el;
     if (!el) {return;}
 
-    // Align to the nearest stage on mount
-    const initial = topToStage(el);
+    // align to nearest stage on mount
+    const initial = topToNearestStage(el);
     stateRef.current.stage = initial;
     el.scrollTop = stageToTop(el, initial);
 
     const onWheel = (e) => {
       const s = stateRef.current;
 
-      // Always prevent default so we don't “free scroll” between waypoints.
-      // We will animate to waypoints ourselves.
+      // We control scroll (waypoints), so prevent native free scroll
       e.preventDefault();
 
-      // Accumulate trackpad/mouse wheel deltas into a "gesture"
+      // accumulate deltas into a "gesture"
       s.accum += e.deltaY;
 
-      // Reset gesture timer
+      // reset gesture timer
       if (s.gestureTimer) {clearTimeout(s.gestureTimer);}
       s.gestureTimer = setTimeout(() => {
         s.gestureTimer = null;
@@ -171,7 +175,6 @@ const StepScrollController = forwardRef(function StepScrollController(
       }, gestureWindowMs);
     };
 
-    // Must be passive:false for preventDefault to work
     el.addEventListener("wheel", onWheel, { passive: false });
 
     return () => {
@@ -199,12 +202,11 @@ const StepScrollController = forwardRef(function StepScrollController(
       el.scrollTop = s.targetTop;
       s.animating = false;
 
-      // If user kept scrolling / clicking during animation, execute queued step(s)
+      // run queued steps if any
       if (s.queuedCount > 0) {
         const dir = s.queuedDir || 1;
         s.queuedCount -= 1;
         if (s.queuedCount === 0) {s.queuedDir = 0;}
-
         startAnimToStage(s.stage + dir);
       }
     }
